@@ -20,8 +20,8 @@ class RecipesService {
       },
     });
     console.log(res.data);
-  AppState.activeRecipe = res.data
-    // console.log(AppState.activeRecipe);
+  AppState.activeRecipe = new Recipe(res.data[0])
+    console.log(AppState.activeRecipe);
   }
 }
 export const recipesService = new RecipesService();

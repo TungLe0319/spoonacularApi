@@ -1,7 +1,7 @@
 <template>
   <router-link :to="{name: 'Details', params:{id: recipe.id }}"> 
-  <div class="card ">
-  <img :src="recipe.image" :alt="recipe.title" class="rounded-top recipeImage">
+  <div class="card bg-transparent my-1 border-0 ">
+  <img :src="recipe.image" :alt="recipe.title" class="rounded recipeImage">
   <div class="card-body">
     <h6> {{recipe.title}} </h6>
   </div>

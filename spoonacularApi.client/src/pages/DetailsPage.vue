@@ -2,7 +2,7 @@
   <div class="container text-dark" v-if="recipe">
     <div class="row">
       <div class="col-md-6">
-     
+  
         <img :src="recipe.image" alt="">
       </div>
     </div>
@@ -22,6 +22,7 @@ export default {
   setup() {
     async function getRecipeInformationById() {
       try {
+        
         await recipesService.getRecipeInformationById(route.params.id);
       } catch (error) {
         Pop.error(error, "[getRecipes]");
